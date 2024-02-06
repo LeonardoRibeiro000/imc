@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="./calcular.css">
+    
+    
+</head>
+<body>
+    <header class="header">
+       <a href="./home.html"><h3 class="titulo">IMC</h3></a> 
+        <p class="titulomenor">Índice de massa corporal</p>
+        <div>
+          <a href="https://github.com/LeonardoRibeiro000" target="_blank"> <img src="./codigo.png" class="icone"></a>
+          <a href="https://www.linkedin.com/in/leonardo-ribeiro-5206b9166" target="_blank"><img src="./linkedin.png" class="icone" > </a>
+          <a href="https://api.whatsapp.com/send?phone=5585991599937&text=Olá,%20gostaria%20de%20contratar%20seus%20serviços!" target="_blank"><img src="./whatsapp.png" class="icone"/></button></a>
+        </div>
+        </header>
+          <div class="result">
+            <h2>Resultado</h2>
+            <p>Nome: <span id="nome"></span></p>
+            <p>IMC: <span id="imc"></span></p>
+            <p>Resultado: <span id="resultado"></span></p>
+        </div>  
+        <div class="button">
+            <a class="btn-back" href="./calcular.html">Tentar novamente</a>
+            
+        </div>
+        <footer>
+          <div class="footer"></div>
+          <p>&#169; 2024 Leonardo Ribeiro. Todos os direitos reservados</p>
+            
+          </div>
+        </footer>
+        
+        <script>
+          
+            const nome = localStorage.getItem('nome')
+            const imc = localStorage.getItem('imc')
+            const resultado = localStorage.getItem('resultado')
+
+            document.getElementById("nome").innerText = nome
+            document.getElementById("imc").innerText = imc
+            document.getElementById("resultado").innerText = resultado
+          
+           
+        </script>     
+    
+</body>
+</html>
